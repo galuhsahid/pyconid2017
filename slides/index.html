@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Build a Data-Driven Web App with Flask</title>
+    <meta name="description" content="Build a Data-Driven Web App with Flask">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="Why WebSlides? Good karma"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is a very effective way to engage young audiences, customers, teams..."> <!-- EDIT -->
+    <meta name="twitter:image" content="https://webslides.tv/static/images/share-karma.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+   
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>Build a Data-Driven Web App with Flask</h1>
+            
+            <nav>
+               <ul>
+                 <li><a href="https://twitter.com/galuhsahid">@galuhsahid</a></li>
+               </ul>
+             </nav>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="wrap">
+          <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+         
+          <div class="wrap">
+            <h1>
+              Background
+            </h1>
+            <ol>
+              <li>There are lots of cool codes and blog posts... but no way to try them unless you run the code yourself</li>
+              <li>The need to create a prototype/MVP that users can use</li>
+              <br />
+              <pre>$ git clone ...</pre>
+              <br />
+              <pre>$ jupyter notebook </pre>
+            </ol>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+            <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+           
+            <div class="grid">
+                <div class="column">
+                  <h5>From this:</h5>
+                    <img class="aligncenter" src="static/images/from.png" alt="Index"></a>
+                    
+                </div>
+    
+    
+                <div class="column">
+                    <h5>To this:</h5>
+                   <img class="aligncenter" src="static/images/to.png" alt="Details"></a>
+                  
+                </div>
+            <!-- .end .wrap -->
+          </section>
+
+          <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <div class="grid vertical-align">
+                <div class="column">
+                  <h3><strong>Why Python?</strong></h3>
+                  <br />
+                  <ol>
+                    <li>Powerful data analytics libraries (pandas, numpy, scikit-learn...)</li>
+                    <li>... and web development frameworks (Flask, Django...)</li>
+                    <li>Great community support</li>
+                  </ol>
+                </div>
+              
+                <!-- .end .column -->
+                <div class="column">
+                 
+  
+  
+                  <h5>More time to focus on <u>getting insights from your data</u> and <u>putting it out there</u></h5>
+                  
+                </div>
+                <!-- .end .column -->
+              </div>
+              <!-- .end .grid -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
+          
+          <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <div class="grid vertical-align">
+                <div class="column">
+                  <h3><strong>Flask</strong></h3>
+                  <p>A microframework for Python based on Werkzeug and Jinja 2.</p>
+  
+                  <p>Great intro tutorials to Flask:</p>
+                  <ol>
+                    <li><a href="http://flask.pocoo.org/">Flask</a></li>
+                    <li><a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">Flask Mega-Tutorial</a></li>
+                  </ol>
+                </div>
+              
+                <!-- .end .column -->
+                <div class="column">
+                  <h3><strong>... but why Flask?</strong></h3>
+                  <p>Flask is simple and flexible:</p>
+  
+                  <img class="aligncenter" src="static/images/simple.png" alt="Example"></a>
+                  
+                  <p>However, it's always a good idea to <u>assess what your application needs</u>.</p>
+                 
+                </div>
+                <!-- .end .column -->
+              </div>
+              <!-- .end .grid -->
+            </div>
+            <!-- .end .wrap -->
+          </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <!-- alignment [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h2><strong>Feel free to follow along!</strong></h2>
+              <h4><a href="http://pyconid-demo.herokuapp.com">http://pyconid-demo.herokuapp.com</a></h4>
+              <h4><a href="https://github.com/galuhsahid/pyconid2017">https://github.com/galuhsahid/pyconid2017</a></h4>
+              <br />
+              <small>Based on "Estimating the Collected Funding Amount of the Social Project Campaigns in a Crowdfunding Platform"</small>
+              <br />
+              <small><em>Galuh Tunggadewi Sahid, Ivana Putri, Intan Sari Septiana, Rahmad Mahendra. ICACSIS 2017</em></small>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+       
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="content-left">
+              <h2>Let's get started!</h2>
+            </div>
+            <div class="grid">
+            <div class="column">
+            <ul class="flexblock steps">
+              <li>
+                <div>
+                  <h2>
+                    Input data
+                  </h2>
+                    From user? External data?
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    </svg>
+                    Prediction
+                  </h2>
+                  Done using the model we have built
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    </svg>
+                    Output
+                  </h2>
+                  Display the result of our calculation and other stats
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+            <div class="content-center">
+              <p>Tip #1: Think from the perspective of the users. What do they need?</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h5>/resources</h5>
+                <p>Your model and other files needed to process your data</p>
+                <h5>/static</h5>
+                <p>Where the stylesheet, JS files, and images go</p>
+                <h5>/templates</h5>
+                <p>Where the HTML files go</p>
+                
+              </div>
+              <div class="column">
+                <a href="https://github.com/webslides/webslides" title="Github"><img class="aligncenter" src="static/images/appstructure.png" alt="WebSlides Files"></a>
+              </div>
+              <div class="column">
+                  <h5>Input: data.py</h5>
+                  <p>Get data from campaign page and Facebook</p>
+                  <h5>Prediction: predict.py</h5>
+                  <p>Predict the amount of campaign donation based on scraped campaign data and Facebook data</p>
+                  <h5>Output: graph.py</h5>
+                  <p>Display a graph that explains how fundraisers can increase their predicted collected donation</p>
+              </div>
+            </div>
+            <!-- end .grid-->
+          </div>
+          <!-- end .wrap-->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <div class="content-left">
+                <h2>The one that glues everything together: routes!</h2>
+              </div>
+  
+  
+              <div class="content-left">
+                
+                  <img class="aligncenter" src="static/images/route-1.png" alt="Index"></a>
+                  <img class="aligncenter" src="static/images/route-2.png" alt="Details"></a>
+                
+              </div>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+              <div class="content-left">
+                <h2>Getting user input</h2>
+              </div>
+  
+  
+              <div class="content-left">
+                <h5>templates/index.html</h5>
+                <img class="aligncenter" src="static/images/index-html-1.png" alt="templates/index.html"></a>
+                
+                <h5>routes.py</h5>
+                <img class="aligncenter" src="static/images/routes-py-1.png" alt="routes.py"></a>
+               
+              </div>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+
+          <section>
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap">
+                <div class="content-left">
+                  <h2>Data Collection</h2>
+
+                  <h6>Data from the campaign page</h6>
+                  <p>Web scraping using <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup 4</a></p>
+
+                  <h6>Engagement data from Facebook</h6>
+                  <p><a href="https://developers.facebook.com/docs/graph-api/">Facebook Graph API</a></p>
+                </div>
+    
+    
+                <div class="content-left">
+                  
+                  
+                  <h5>routes.py</h5>
+                  <img class="aligncenter" src="static/images/routes-py-2.png" alt="routes.py"></a>
+                  
+                  
+                </div>
+                <div class="content-center">
+                    <p>Tip #2: Keep in mind the type of your data</p>
+                  </div>
+              </div>
+              <!-- .end .wrap -->
+            </section>
+
+          <section>
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap">
+                <div class="content-left">
+                  <h2>Prediction</h2>
+
+                  <h6>Libraries</h6>
+                  <p>We are using <a href="http://scikit-learn.org">scikit-learn</a> but depending on your app, you can use plenty others (LibSVM, Gensim, Tensor Flow...)</p>
+
+                  <h6>Make your model persistent</h6>
+                  <p>Pickle, joblib*</p>
+                </div>
+    
+                <div class="content-left">
+                  <h5>routes.py</h5>
+                  <img class="aligncenter" src="static/images/routes-py-3.png" alt="templates/index.html"></a>
+                  
+                  <h5>predict.py</h5>
+                  <img class="aligncenter" src="static/images/predict-py.png" alt="templates/index.html"></a>
+                 
+                </div>
+
+                <div class="content-center">
+                    <p>*) <a href="http://pyvideo.org/pycon-us-2014/pickles-are-for-delis-not-software.html">use with caution</a></p>
+                  </div>
+              </div>
+              <!-- .end .wrap -->
+            </section>
+
+            <section>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                  <div class="content-left">
+                    <h2>Data Viz</h2>
+  
+                    <h6>Libraries</h6>
+                    <p><a href="https://matplotlib.org/">Matplotlib</a>, <a href="https://seaborn.pydata.org/">Seaborn</a></p>
+
+                    <h6>How do we generate a plot dynamically and display it in a page?</h6>
+                    
+                  </div>
+      
+                  <div class="content-left">
+                    <h5>routes.py</h5>
+                    <img class="aligncenter" src="static/images/routes-py-4.png" alt="routes.py"></a>
+                    
+                    <h5>graph.py</h5>
+                    <img class="aligncenter" src="static/images/graph-py.png" alt="graph.py"></a>
+                   
+                  </div>
+                </div>
+                <!-- .end .wrap -->
+              </section>
+
+              <section>
+                  <!--.wrap = container (width: 90%) -->
+                  <div class="wrap">
+                    <div class="content-left">
+                      <h2>Recap &dash; what do we have so far?</h2>
+                    </div>
+        
+                    <div class="content-left">
+                      <h5>from get_data()</h5>
+<pre>
+data =
+{
+  "title_wc": title_wc,
+  "short_wc": short_wc,
+  "story_wc": story_wc,
+  ...
+  "prediction": prediction,
+  ...
+  "fb_reaction_count": fb_reaction_count,
+  "fb_comment_count": fb_comment_count,
+  "fb_share_count": fb_share_count,
+  "collected_amt": collected_amt
+}</pre>
+                      
+                    </div>
+                  </div>
+                  <!-- .end .wrap -->
+                </section>
+
+                <section>
+                    <!--.wrap = container (width: 90%) -->
+                    <div class="wrap">
+                      <div class="content-left">
+                        <h2>Recap &dash; what do we have so far?</h2>
+                      </div>
+          
+                      <div class="content-left">
+                        <h5>from display_fb_shares()</h5>
+  <pre>
+  fb_shares =
+  {
+    "plot_url": plot_url,
+    "target_bin": target_bin, 
+    "target_bin_avg": target_bin_avg
+  }</pre>
+                        
+                      </div>
+                    </div>
+                    <!-- .end .wrap -->
+                  </section>
+
+                  <section>
+                      <!--.wrap = container (width: 90%) -->
+                      <div class="wrap">
+                        <div class="content-left">
+                          <h2>Display it to the user</h2>
+                        </div>
+            
+                        <div class="content-left">
+                          <h5>routes.py</h5>
+                          <img class="aligncenter" src="static/images/routes-py-5.png" alt="graph.py"></a>
+                            
+                        </div>
+                      </div>
+                      <!-- .end .wrap -->
+                    </section>
+
+          <section>
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap">
+                <div class="content-left">
+                  <h2>Display it to the user</h2>
+
+                  <h6>Most of the time, everything is pretty straightforward</h6>
+                  
+                </div>
+    
+                <div class="content-left">
+                  <h5>templates/details.html</h5>
+                  <img class="aligncenter" src="static/images/details-html-1.png" alt="routes.py"></a>
+                  
+                </div>
+
+                <div class="content-center">
+                    <p>Tip #3: Keep a go-to stylesheet for quick use</p>
+                  </div>
+              </div>
+              <!-- .end .wrap -->
+            </section>
+  
+            <section>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                  <div class="content-left">
+                    <h2>Display it to the user</h2>
+  
+                    <h6>Displaying graph</h6>
+                    <p><a href="https://tools.ietf.org/html/rfc2397">RFC2397</a></p>
+                    
+                  </div>
+      
+                  <div class="content-left">
+                    <h5>templates/details.html</h5>
+                    <img class="aligncenter" src="static/images/details-html-2.png" alt="routes.py"></a>
+                    
+                  </div>
+                </div>
+                <!-- .end .wrap -->
+              </section>
+
+              <section>
+                  <!--.wrap = container (width: 90%) -->
+                  <div class="wrap">
+                    <div class="content-left">
+                      <h2>Display it to the user</h2>
+    
+                      <h6>Conditional</h6>
+                      
+                    </div>
+        
+                    <div class="content-left">
+                      <h5>templates/details.html</h5>
+                      <img class="aligncenter" src="static/images/details-html-3.png" alt="routes.py"></a>
+                      
+                    </div>
+                  </div>
+                  <!-- .end .wrap -->
+                </section>
+
+                <section>
+                    <!--.wrap = container (width: 90%) -->
+                    <div class="wrap">
+                      <div class="content-left">
+                        <h2>Display it to the user</h2>
+      
+                        <h6>Conditional</h6>
+                        
+                      </div>
+          
+                      <div class="content-left">
+                        <img class="aligncenter" src="static/images/conditional-example-1.png" alt="routes.py"></a>
+                        <img class="aligncenter" src="static/images/conditional-example-2.png" alt="routes.py"></a>
+                        
+                      </div>
+                    </div>
+                    <!-- .end .wrap -->
+                  </section>
+
+                <section>
+                    <!--.wrap = container (width: 90%) -->
+                    <div class="wrap">
+                      <div class="content-left">
+                        <h2>Display it to the user</h2>
+      
+                        <h6>Custom filters</h6>
+                        
+                      </div>
+          
+                      <div class="content-left">
+                        <img class="aligncenter" src="static/images/custom-filter.png" alt="routes.py"></a>
+                          
+                        <h5>templates/details.html</h5>
+                        <img class="aligncenter" src="static/images/details-html-3.png" alt="routes.py"></a>
+                        
+                      </div>
+                    </div>
+                    <!-- .end .wrap -->
+                  </section>
+
+                  <section>
+                      <!--.wrap = container (width: 90%) -->
+                      <div class="wrap">
+                        <div class="content-left">
+                          <h2>Flask is capable of much more</h2>
+        
+                          <ul class="description">
+                            <li><a href="http://pypi.python.org/pypi/Flask-Admin">Flask Admin</a></li>
+                            <li><a href="http://pypi.python.org/pypi/Flask-Login">Flask Login</a></li>
+                            <li><a href="http://pypi.python.org/pypi/Flask-Mail">Flask Mail</a></li>
+                            <li>... and so on!</li>
+
+                            </ul>
+                          
+                        </div>
+            
+                        <div class="content-left">
+                          
+                        </div>
+                      </div>
+                      <!-- .end .wrap -->
+                    </section>
+
+                    <section class="bg-black aligncenter">
+                        <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+                       
+                        <div class="wrap fadeInUp">
+                          <h1>
+                            That's it. 🎉 Thanks! 
+                          </h1>
+                        </div>
+                        <!-- .end .wrap -->
+                      </section>
+    
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+
+    <!-- Autoslide 5 seconds. If you don't want autoslide, remove: {autoslide: 5000} -->
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
