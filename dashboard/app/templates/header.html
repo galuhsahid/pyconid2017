@@ -1,0 +1,27 @@
+<!doctype html>
+<title>Campaign Success Predictor</title>
+
+<!-- Latest compiled and minified Boootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <!-- Optional bootstrap theme -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<body>
+    <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="header">
+                <h1><a href="/">Campaign Success Predictor</a></h1>
+              </div>
+
+  {% block body %}
+  {% endblock %}
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>

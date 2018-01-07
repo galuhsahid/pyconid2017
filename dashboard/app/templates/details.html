@@ -1,0 +1,164 @@
+{% extends "header.html" %}
+{% block body %}
+<hr />
+    <div class="container">
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+                <div class="header">
+                  <h2>kitabisa.com/{{ campaign }}</h2>
+                </div>
+              </div>
+            </div>
+          
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                <div class="half-width main-stats">
+                  <div class="stats-name">
+                    <h4>Collected Amount</h4>
+                  </div>
+                  <div class="stats-value {{'funded' if data['is_funded'] else 'not-funded'}}">
+                    {{ data["collected_amt"]|format_currency}}
+                  </div>
+                                    
+                </div>
+                <div class="half-width main-stats">
+                  <div class="stats-name">
+                    <h4>Target Amount</h4>
+                  </div>
+                  <div class="stats-value {{'funded' if data['is_funded'] else 'not-funded'}}">
+                        {{ data["donation_target_amt"]|format_currency }}
+                      </div>
+                                    
+                </div>
+                <div class="half-width main-stats">
+                  <div class="stats-name">
+                    <h4>Prediction Amount</h4>
+                  </div>
+                  <div class="stats-value {{'funded' if data['is_funded'] else 'not-funded'}}">
+                        {{ data['prediction']|format_currency }}
+
+
+                      </div>
+                                    
+                </div>
+                <div class="half-width main-stats">
+                  <div class="stats-name">
+                    <h4>Prediction Result</h4>
+                  </div>
+                  {% if data["is_funded"]  %}
+                           <div class="stats-value funded">
+                        Funded
+
+                      </div>
+                  {% else %}
+                                                               <div class="stats-value not-funded">
+                        Not Funded
+                      </div>
+                  {% endif %}
+                                      </div>
+              </div>
+              
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                <div class="card">
+                  <div class="inner-card">
+                    <h3>Your campaign statistics</h3>
+                    <br />
+                    <ul class="stats-list">
+                      <li>
+                        <div class="stats-name">Title word count</div>
+                        <div class="stats-value">{{ data["title_wc"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Short description word count</div>
+                        <div class="stats-value">{{ data["short_wc"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Story word count</div>
+                        <div class="stats-value">{{ data["story_wc"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Is an organization</div>
+                        <div class="stats-value">{{ data["is_org"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of donors</div>
+                        <div class="stats-value">{{ data["donor_cnt"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of images</div>
+                        <div class="stats-value">{{ data["img_cnt"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of videos</div>
+                        <div class="stats-value">{{ data["vid_cnt"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of fundraisers</div>
+                        <div class="stats-value">{{ data["fundraiser_cnt"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of updates</div>
+                        <div class="stats-value">{{ data["update_cnt"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Amount of minimum reward</div>
+                        <div class="stats-value">{{ data["min_reward"]|format_currency }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Amount of maximum reward</div>
+                        <div class="stats-value">{{ data["max_reward"]|format_currency }}</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="card">
+                  <div class="inner-card">
+                    <h3></h3>
+                    <br /><br /><br />
+                    <ul class="stats-list">
+                      <li>
+                        <div class="stats-name">Number of Facebook reactions</div>
+                        <div class="stats-value">{{ data["fb_reaction_count"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of Facebook comments</div>
+                        <div class="stats-value">{{ data["fb_comment_count"] }}</div>
+                      </li>
+                      <li>
+                        <div class="stats-name">Number of Facebook shares</div>
+                        <div class="stats-value">{{ data["fb_share_count"] }}</div>
+                       
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+     
+          </div>
+        </div>
+
+        {% if fb_shares['target_bin'] > data['fb_share_count'] %}
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+              <h3>How can you improve your chances to reach your donation target?</h3>
+
+              <h4>Share your campaign link more often in Facebook</h4>
+
+              Campaigns that have successfully collected <strong>{{ fb_shares['target_bin'] }}</strong> have <strong>{{ fb_shares['target_bin_avg'] }}</strong> Facebook shares in average.
+
+              <div class="text-center">
+                <img src="data:image/png;base64, {{ fb_shares['plot_url'] }}" />
+              </div>
+
+            </div>
+          </div>
+        {% endif %}
+</html>
+{% endblock %}
